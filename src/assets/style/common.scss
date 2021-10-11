@@ -1,4 +1,13 @@
+// variables
 @import './assets/style/variables.scss';
+// mixins
+@import './assets/style/mixins.scss';
+
+// bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// google font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
 
 // reset
 * {
@@ -7,6 +16,42 @@
     box-sizing: border-box;
 }
 
-.container {
+// typo
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+// my container
+.wrapper {
     width: 70%;
+    margin: auto;
+}
+
+// link
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: inherit;
+}
+
+// buttons
+.btn_full {
+    background-color: $mainColor;
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: #fff;
+}
+.btn_full:hover {
+    color: #fff;
+}
+.btn_empty {
+    border: 1px solid $mainColor;
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: $mainColor;
+}
+.btn_empty:hover {
+    color: $mainColor;
 }

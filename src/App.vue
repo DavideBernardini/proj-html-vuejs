@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header :sections="sections"/>
     <Main/>
   </div>
 </template>
@@ -14,11 +14,17 @@ export default {
   components: {
     Header,
     Main
+  },
+  data() {
+    return {
+      sections: ['home', 'services', 'about', 'projects', 'results']
+    }
   }
 }
 </script>
 
 <style lang="scss">
 @import './assets/style/common.scss';
+@import '~@fortawesome/fontawesome-free/css/all.css';
 
 </style>

@@ -1,0 +1,36 @@
+@import './variables.scss';
+
+// lists
+@mixin list-style-none {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin inline-block-list {
+    @include list-style-none;
+    display: inline-block;
+    li {
+        display: inline-block;
+    }
+}
+
+// flex properties
+@mixin align-center-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+// logo 
+@mixin logo-style {
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    span {
+        background-color: rgba(0, 166, 166, 0.2);
+        padding: .8125rem .125rem .8125rem 1.5625rem;
+        margin-right: .125rem;
+        border-radius: 1.875rem 0 0 1.875rem;
+        color: $mainColorLighter;
+    }
+}
