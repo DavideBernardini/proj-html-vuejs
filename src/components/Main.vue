@@ -1,12 +1,13 @@
 <template>
-    <section id="hero" class="hero"></section>
+    <main></main>
 </template>
 
 <script>
 export default {
-    name: 'Hero'
+    name: 'Main'
 }
 </script>
 
 <style scoped lang="scss">
+
 </style>
