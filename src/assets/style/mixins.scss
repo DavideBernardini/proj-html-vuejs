@@ -15,10 +15,25 @@
     }
 }
 
+// positions
+@mixin center-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 // flex properties
-@mixin align-center-between {
+@mixin space-between {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin align-center {
     display: flex;
     align-items: center;
+}
+@mixin align-center-between {
+    @include align-center;
     justify-content: space-between;
 } 
 
@@ -32,5 +47,16 @@
         margin-right: .125rem;
         border-radius: 1.875rem 0 0 1.875rem;
         color: $mainColorLighter;
+    }
+}
+
+// headings
+@mixin heading-style {
+    font-weight: bolder;
+    color: $textColorPrimary;
+    span {
+        color: $mainColor;
+        background-color: $mainColorTransparent;
+        border-radius: .3125rem;
     }
 }

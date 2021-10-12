@@ -39,17 +39,17 @@ a:hover {
 // buttons
 .btn_full {
     background-color: $mainColor;
-    padding: 15px 25px;
-    border-radius: 5px;
+    padding: .875rem 1.5625rem;
+    border-radius: .3125rem;
     color: #fff;
 }
 .btn_full:hover {
     color: #fff;
 }
 .btn_empty {
-    border: 1px solid $mainColor;
-    padding: 15px 25px;
-    border-radius: 5px;
+    border: .0625rem solid $mainColor;
+    padding: .875rem 1.5625rem;
+    border-radius: .3125rem;
     color: $mainColor;
 }
 .btn_empty:hover {

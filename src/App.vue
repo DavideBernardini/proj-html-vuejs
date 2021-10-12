@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Header :sections="sections"/>
-    <Main/>
+    <Header/>
+    <Main :sections="sections" :serviceList="serviceList"/>
   </div>
 </template>
 
@@ -17,7 +17,39 @@ export default {
   },
   data() {
     return {
-      sections: ['home', 'services', 'about', 'projects', 'results']
+      sections: ['home', 'services', 'about', 'projects', 'results'],
+      serviceList: [
+        {
+          name: 'Audit & Assurance',
+          icon: 'svg-1.svg',
+          info: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'
+        },
+        {
+          name: 'Financial Advisory',
+          icon: 'svg-2.svg',
+          info: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'
+        },
+        {
+          name: 'Analytics and M&A',
+          icon: 'svg-3.svg',
+          info: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'
+        },
+        {
+          name: 'Middle Marketing',
+          icon: 'svg-4.svg',
+          info: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'
+        },
+        {
+          name: 'Legal Consulting',
+          icon: 'svg-5.svg',
+          info: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'
+        },
+        {
+          name: 'Regular Risk',
+          icon: 'svg-6.svg',
+          info: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'
+        },
+      ]
     }
   }
 }

@@ -1,7 +1,15 @@
 <template>
-    <section id="home" class="home d-flex">
+    <section id="home" class="home d-flex flex-column">
+        <!-- nav -->
+        <Navbar :sections="sections"/>
+        <!-- /nav -->
+        <!-- content center -->
         <div class="content m-auto">
-            <h2>Ready <span>Team</span></h2>
+            <h2>Ready 
+                <span>
+                    Team
+                </span>
+            </h2>
             <p class="pt-4">
                 No matter what your company needs, we will be ready to assist you in the best possible wat.
             </p>
@@ -14,17 +22,26 @@
                 </a>
             </div>
         </div>
+        <!-- /content center -->
+        <!-- navigation pills -->
         <div class="pills">
             <div class="pill"></div>
-            <div class="pill full"></div>
+            <div class="pill my-2 active"></div>
             <div class="pill"></div>
+        <!-- /navigation pills -->
         </div>
     </section>
 </template>
 
 <script>
+import Navbar from '../components/Navbar.vue'
+
 export default {
-    name: 'Home'
+    name: 'Home',
+    components: {
+        Navbar
+    },
+    props: ['sections']
 }
 </script>
 
@@ -33,23 +50,19 @@ export default {
 @import '../assets/style/mixins.scss';
 
 .home {
-    height: 850px;
-    margin-top: -100px;
+    height: 53.125rem;
     background-image: url('../assets/images/bg-parallax.png');
     background-position: center;
     position: relative;
     .content {
-        width: 500px;
+        width: 31.25rem;
         text-align: center;
+        @include center-absolute;
         h2 {
-            font-size: 70px;
-            font-weight: bolder;
-            color: $textColorPrimary;
+            @include heading-style;
+            font-size: 4.375rem;
             span {
-                color: $mainColor;
-                background-color: $mainColorTransparent;
-                padding: 10px 20px;
-                border-radius: 5px;
+                padding: .625rem 1.25rem;
             }
         }
         p {
@@ -59,7 +72,18 @@ export default {
     .pills {
         position: absolute;
         top: 50%;
+        right: 1.875rem;
         transform: translateY(-50%);
+        .pill {
+            height: 2.5rem;
+            width: .625rem;
+            border: .0625rem solid $mainColor;
+            border-radius: .625rem;
+        }
+        .pill.active {
+            background-color: $mainColor;
+        }
     }
+    
 }
 </style>
