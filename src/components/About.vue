@@ -70,7 +70,7 @@ export default {
 @import '../assets/style/mixins.scss';
 
 .about {
-    height: 880px;
+    height: 55rem;
     color: $textColorSecondaryLighter;
     .container-fluid {
         .col-6 {
