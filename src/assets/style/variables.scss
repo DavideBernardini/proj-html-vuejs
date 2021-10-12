@@ -1,7 +1,7 @@
 // colors
 $mainColor: rgb(3, 132, 132);
 
-$mainColorTransparent: rgb(3, 132, 132, 0.2);
+$mainColorTransparent: rgba(3, 132, 132, 0.2);
 
 $mainColorTransparentDark: rgb(3, 132, 132, 0.4);
 
@@ -9,6 +9,10 @@ $mainColorLighter: rgb(0, 166, 166);
 
 $textColorPrimary: rgb(33, 51, 62);
 
-$textColorSecondary: rgb(98, 111, 119);
+$textColorSecondary: rgb(98, 111, 119); 
+
+$textColorSecondaryLighter: rgb(192, 195, 208);
 
 $bgColor: rgb(238, 241, 237);
+
+$bgDark: rgb(17, 17, 23);

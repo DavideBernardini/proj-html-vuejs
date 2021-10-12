@@ -5,7 +5,8 @@
         <!-- /nav -->
         <!-- content center -->
         <div class="content m-auto">
-            <h2>Ready 
+            <h2>
+                Ready 
                 <span>
                     Team
                 </span>

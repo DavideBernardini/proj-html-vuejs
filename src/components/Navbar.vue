@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <div class="wrapper">
+        <div class="wrapper h-100 px-1">
             <!-- left -->
             <div class="nav_left">
                 <div class="logo">
@@ -42,7 +42,6 @@ nav {
     height: 5.3125rem;
     .wrapper {
         @include align-center-between;
-        height: 100%;
         ul {
             @include inline-block-list;
         }

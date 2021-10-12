@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header/>
-    <Main :sections="sections" :serviceList="serviceList"/>
+    <Main :sections="sections" :serviceList="serviceList" :companyValues="companyValues"/>
   </div>
 </template>
 
@@ -49,6 +49,28 @@ export default {
           icon: 'svg-6.svg',
           info: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'
         },
+      ],
+      companyValues: [
+        {
+          title: 'Tradition',
+          icon: 'fas fa-award',
+          info: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'
+        },
+        {
+          title: 'Security',
+          icon: 'fas fa-lock',
+          info: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'
+        },
+        {
+          title: 'Certificate',
+          icon: 'far fa-edit',
+          info: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'
+        },
+        {
+          title: 'Expertise',
+          icon: 'fas fa-graduation-cap',
+          info: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'
+        }
       ]
     }
   }

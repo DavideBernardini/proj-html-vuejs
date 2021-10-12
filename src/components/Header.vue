@@ -1,6 +1,6 @@
 <template>
     <header>
-        <div class="wrapper">
+        <div class="wrapper h-100">
             <!-- left -->
             <div class="header_left">
                 <i class="fas fa-clock pe-1"></i>
@@ -53,7 +53,6 @@ export default {
 header {
     .wrapper {
         @include align-center-between;
-        height: 100%;
         ul {
             @include inline-block-list;
         }
