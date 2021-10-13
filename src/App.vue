@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header/>
-    <Main :sections="sections" :serviceList="serviceList" :companyValues="companyValues"/>
+    <Main :sections="sections" :serviceList="serviceList" :companyValues="companyValues" :companyProjects="companyProjects"/>
   </div>
 </template>
 
@@ -70,6 +70,44 @@ export default {
           title: 'Expertise',
           icon: 'fas fa-graduation-cap',
           info: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'
+        }
+      ],
+      companyProjects: [
+        {
+          title: 'Academic professional program in social media',
+          image: 'project-1.jpg',
+          paragraph: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+          category: 'social'
+        },
+        {
+          title: 'President\'s speech at the annual meeteng',
+          image: 'project-2.jpg',
+          paragraph: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+          category: 'institutional'
+        },
+        {
+          title: 'International buisness trip to Shangai',
+          image: 'project-3.jpg',
+          paragraph: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+          category: 'events'
+        },
+        {
+          title: 'Technology workshop with education theme',
+          image: 'project-4.jpg',
+          paragraph: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+          category: 'thecnology'
+        },
+        {
+          title: 'Donation of clothes and food to the partner NGO',
+          image: 'project-5.jpg',
+          paragraph: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+          category: 'enironment'
+        },
+        {
+          title: 'Confraternization of the procurement team',
+          image: 'project-6.jpg',
+          paragraph: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+          category: 'innovation'
         }
       ]
     }

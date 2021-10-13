@@ -55,6 +55,9 @@
                 <!-- /right -->
             </div>
         </div>
+        <!-- bullets decoration -->
+        <img class="bullets top" src="../assets/images/svgs/svg-0.svg" alt="bullets decoration">
+        <img class="bullets" src="../assets/images/svgs/svg-0.svg" alt="bullets decoration">
     </section>
 </template>
 
@@ -72,6 +75,7 @@ export default {
 .about {
     height: 55rem;
     color: $textColorSecondaryLighter;
+    position: relative;
     .container-fluid {
         .col-6 {
             padding: 0;
@@ -114,6 +118,18 @@ export default {
                 object-fit: cover;
             }
         }
+    }
+    .bullets {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -27.5%);
+        height: 5.625rem;
+        filter: invert(40%) sepia(61%) saturate(858%) hue-rotate(136deg) brightness(86%) contrast(98%);
+        opacity: 0.5;
+    }
+    .bullets.top {
+        top: 0;
     }
 }
 

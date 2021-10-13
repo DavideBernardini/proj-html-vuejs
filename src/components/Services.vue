@@ -39,8 +39,6 @@
             </div>
             <!-- /cards -->
         </div>
-        <!-- bullets decoration -->
-        <img class="bullets" src="../assets/images/svgs/svg-0.svg" alt="bullets decoration">
     </section>
 </template>
 
@@ -60,7 +58,6 @@ export default {
     background-color: $bgColor;
     height: 68.125rem;
     color: $textColorSecondary;
-    position: relative;
     h5 {
         font-weight: bold;
         font-size: .875rem;
@@ -87,7 +84,7 @@ export default {
         width: calc(100% / 3 - 1.25rem);
         margin-top: 1.875rem;
         padding: 2.8125rem;
-        border-radius: .9375rem;
+        border-radius: .625rem;
         .icons {
             @include space-between;
             img {
@@ -106,15 +103,6 @@ export default {
     .col:nth-child(2), .col:nth-child(5) {
         margin-left: 1.875rem;
         margin-right: 1.875rem;
-    }
-    .bullets {
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translate(-50%, -27.5%);
-        height: 3.75rem;
-        filter: invert(40%) sepia(61%) saturate(858%) hue-rotate(136deg) brightness(86%) contrast(98%);
-        opacity: 0.5;
     }
 }
 </style>
