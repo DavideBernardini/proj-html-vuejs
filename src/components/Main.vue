@@ -5,15 +5,17 @@
         <About :companyValues="companyValues"/>
         <Projects :companyProjects="companyProjects"/>
         <Results :results="results" :technologiesLogo="technologiesLogo"/>
+        <Support/>
     </main>
 </template>
 
 <script>
 import Home from '../components/Home.vue';
 import Services from '../components/Services.vue';
-import About from '../components/About.vue'
-import Projects from '../components/Projects.vue'
-import Results from '../components/Results.vue'
+import About from '../components/About.vue';
+import Projects from '../components/Projects.vue';
+import Results from '../components/Results.vue';
+import Support from '../components/Support.vue';
 
 export default {
     name: 'Main',
@@ -22,7 +24,8 @@ export default {
         Services,
         About,
         Projects,
-        Results
+        Results,
+        Support
     },
     props: ['sections',
     'serviceList',
