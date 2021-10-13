@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Header/>
-    <Main :sections="sections" :serviceList="serviceList" :companyValues="companyValues" :companyProjects="companyProjects"/>
+    <Main :sections="sections" :serviceList="serviceList" :companyValues="companyValues" :companyProjects="companyProjects"
+    :results="results"
+    :technologiesLogo="technologiesLogo"/>
   </div>
 </template>
 
@@ -17,7 +19,14 @@ export default {
   },
   data() {
     return {
-      sections: ['home', 'services', 'about', 'projects', 'results'],
+      sections: [
+        'home',
+        'services',
+        'about',
+        'projects',
+        'results',
+        'support'
+        ],
       serviceList: [
         {
           name: 'Audit & Assurance',
@@ -108,6 +117,46 @@ export default {
           image: 'project-6.jpg',
           paragraph: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
           category: 'innovation'
+        }
+      ],
+      results: [
+        {
+          stat: 'certifications',
+          number: 128
+        },
+        {
+          stat: 'employees',
+          number: 230
+        },
+        {
+          stat: 'costumers',
+          number: 517
+        },
+        {
+          stat: 'countries served',
+          number: 94
+        }
+      ],
+      technologiesLogo: [
+        {
+          name: 'jquery',
+          logo: 'logo-4'
+        },
+        {
+          name: 'less',
+          logo: 'logo-5'
+        },
+        {
+          name: 'woocommerce',
+          logo: 'logo-1'
+        },
+        {
+          name: 'wordpress',
+          logo: 'logo-2'
+        },
+        {
+          name: 'pingdom',
+          logo: 'logo-3'
         }
       ]
     }

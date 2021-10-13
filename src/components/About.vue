@@ -6,7 +6,7 @@
                 <div class="col-6 h-100 left">
                     <!-- content left -->
                     <div class="content me-5">
-                        <h5 class="pb-4">
+                        <h5 class="fw-bold pb-4">
                             OUR BUISNESS AREA
                         </h5>
                         <h2>
@@ -22,7 +22,7 @@
                                 <div class="col my-3"
                                 v-for="(value, index) in companyValues"
                                 :key="index">
-                                    <h4 class="pb-3">
+                                    <h4 class="fw-bold pb-3">
                                         <i class="pe-1"
                                         :class="value.icon"></i>
                                         {{value.title}}
@@ -87,7 +87,6 @@ export default {
             .content {
                 width: 70%;
                 h5 {
-                    font-weight: bold;
                     font-size: .875rem;
                     color: $mainColorLighter;
                 }
@@ -102,7 +101,7 @@ export default {
                 }
                 .col {
                     h4 {
-                        color: #fff;
+                        color: $textColorSecondarySuperLight;
                         i {
                             color: $mainColorLighter;
                         }

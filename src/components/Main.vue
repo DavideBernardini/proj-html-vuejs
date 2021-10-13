@@ -4,6 +4,7 @@
         <Services :serviceList="serviceList"/>
         <About :companyValues="companyValues"/>
         <Projects :companyProjects="companyProjects"/>
+        <Results :results="results" :technologiesLogo="technologiesLogo"/>
     </main>
 </template>
 
@@ -12,6 +13,7 @@ import Home from '../components/Home.vue';
 import Services from '../components/Services.vue';
 import About from '../components/About.vue'
 import Projects from '../components/Projects.vue'
+import Results from '../components/Results.vue'
 
 export default {
     name: 'Main',
@@ -19,9 +21,15 @@ export default {
         Home,
         Services,
         About,
-        Projects
+        Projects,
+        Results
     },
-    props: ['sections', 'serviceList', 'companyValues', 'companyProjects']
+    props: ['sections',
+    'serviceList',
+    'companyValues',
+    'companyProjects',
+    'results',
+    'technologiesLogo']
 }
 </script>
 

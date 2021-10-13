@@ -45,6 +45,7 @@ a:hover {
 }
 .btn_full:hover {
     color: #fff;
+    background-color: $mainColorLighter;
 }
 .btn_empty {
     border: .0625rem solid $mainColor;
@@ -53,5 +54,6 @@ a:hover {
     color: $mainColor;
 }
 .btn_empty:hover {
-    color: $mainColor;
+    color: $mainColorLighter;
+    border: .0625rem solid $mainColorLighter;
 }

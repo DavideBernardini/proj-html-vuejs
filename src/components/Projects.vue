@@ -21,12 +21,13 @@
             <!-- cards -->
             <div class="container-fluid">
                 <div class="row row-cols-3">
+                    <!-- card -->
                     <div class="col"
                     v-for="(project, index) in companyProjects"
                     :key="index">
                         <img class="w-100" 
-                        :src="require(`../assets/images/${project.image}`)" alt="">
-                        <div class="text text-white">
+                        :src="require(`../assets/images/${project.image}`)" :alt="`image for ${project.title}`">
+                        <div class="text">
                             <h4 class="fw-bold">
                                 {{project.title}}
                             </h4>
@@ -35,6 +36,7 @@
                             </p>
                         </div>
                     </div>
+                    <!-- /card -->
                 </div>
             </div>
             <!-- /cards -->
@@ -96,16 +98,19 @@ export default {
             filter: brightness(50%) blur(.03125rem);
         }
         .text {
-            color: $textColorSecondaryLighter;
             position: absolute;
             left: 50%;
             transform: translate(-50%);
             width: 90%;
             bottom: 10%;
             text-align: center;
+            h4 {
+                color: $textColorSecondarySuperLight;
+            }
             p {
                 display: none;
                 font-size: 1.0625rem;
+                color: $textColorSecondaryLighter;
             }
         }
     }

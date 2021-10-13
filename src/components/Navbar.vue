@@ -12,7 +12,7 @@
             <div class="nav_right">
                 <ul>
                     <li class="px-3"
-                    v-for="(section, index) in sections"
+                    v-for="(section, index) in sections.slice(0, 5)"
                     :key="index">
                         <a :href="`#${section}`">{{section}}</a>
                     </li>
