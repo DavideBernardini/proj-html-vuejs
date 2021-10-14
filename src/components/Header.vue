@@ -11,7 +11,7 @@
             <div class="header_right">
                 <ul>
                     <li class="pe-4"
-                    v-for="(contact, index) in contacts.splice(2)"
+                    v-for="(contact, index) in contacts.slice(0, 2)"
                     :key="index">
                         <i :class="contact.icon"></i>
                         {{contact.info}}
