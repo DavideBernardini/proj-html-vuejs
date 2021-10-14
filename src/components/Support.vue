@@ -74,7 +74,7 @@
                             </li>
                         </ul>
                         <!-- /contacts --> 
-                        <div class="btn_empty d-inline-block mt-3">VIEW MAP</div>                       
+                        <div class="pointer btn_empty d-inline-block mt-3">VIEW MAP</div>                       
                     </div>
                     <!-- /right -->
                 </div>

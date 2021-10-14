@@ -26,9 +26,9 @@
         <!-- /content center -->
         <!-- navigation pills -->
         <div class="pills">
-            <div class="pill"></div>
-            <div class="pill my-2 active"></div>
-            <div class="pill"></div>
+            <div class="pill pointer"></div>
+            <div class="pill pointer my-2 active"></div>
+            <div class="pill pointer"></div>
         <!-- /navigation pills -->
         </div>
     </section>

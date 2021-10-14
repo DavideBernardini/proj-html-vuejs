@@ -19,18 +19,10 @@
                         <!-- value cards -->
                         <div class="container-fluid p-0">
                             <div class="row row-cols-2">
-                                <div class="col my-3"
+                                <ValueCard class="col my-3"
                                 v-for="(value, index) in companyValues"
-                                :key="index">
-                                    <h4 class="fw-bold pb-3">
-                                        <i class="pe-1"
-                                        :class="value.icon"></i>
-                                        {{value.title}}
-                                    </h4>
-                                    <p>
-                                        {{value.info}}
-                                    </p>
-                                </div>
+                                :key="index"
+                                :value="value"/>
                             </div>
                         </div>
                         <!-- /value cards -->
@@ -60,13 +52,19 @@
 </template>
 
 <script>
+import ValueCard from '../components/ValueCard.vue';
+
+
 export default {
     name: 'About',
+    components: {
+        ValueCard
+    },
     props: ['companyValues']
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '../assets/style/variables.scss';
 @import '../assets/style/mixins.scss';
 

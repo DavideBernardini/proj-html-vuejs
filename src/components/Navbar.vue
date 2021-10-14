@@ -14,7 +14,8 @@
                     <li class="px-3"
                     v-for="(section, index) in sections.slice(0, 5)"
                     :key="index">
-                        <a :href="`#${section}`">{{section}}</a>
+                        <a class="py-3"
+                        :href="`#${section}`">{{section}}</a>
                     </li>
                 </ul>
                 <a href="#support" class="btn_full ms-3">
@@ -52,6 +53,10 @@ nav {
         }
         li {
             text-transform: uppercase;
+        }
+        li:hover a {
+            border-bottom: 3px solid $mainColor;
+            margin-bottom: -3px;
         }
     }
 }

@@ -19,22 +19,10 @@
             <!-- cards -->
             <div class="container-fluid">
                 <div class="row row-cols-3">
-                    <div class="col"
+                    <ServiceCard class="col"
                     v-for="(service, index) in serviceList"
-                    :key="index">
-                        <div class="icons mb-1">
-                            <img :src="require(`../assets/images/svgs/${service.icon}`)" :alt="`icon for ${service.icon}`">
-                            <a href="#">
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                        <h4 class="fw-bold py-4">
-                            {{service.name}}
-                        </h4>
-                        <p>
-                            {{service.info}}
-                        </p>
-                    </div>
+                    :key="index"
+                    :service="service"/>
                 </div>
             </div>
             <!-- /cards -->
@@ -43,13 +31,18 @@
 </template>
 
 <script>
+import ServiceCard from '../components/ServiceCard.vue';
+
 export default {
     name: 'Services',
-    props: ['serviceList']
+    props: ['serviceList'],
+    components: {
+        ServiceCard
+    }
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 @import '../assets/style/variables.scss';
 @import '../assets/style/mixins.scss';
 

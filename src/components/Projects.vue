@@ -22,21 +22,10 @@
             <div class="container-fluid">
                 <div class="row row-cols-3">
                     <!-- card -->
-                    <div class="col pointer"
+                    <ProjectCard class="col pointer"
                     v-for="(project, index) in companyProjects"
-                    :key="index">
-                        <img class="w-100" 
-                        :src="require(`../assets/images/${project.image}`)" :alt="`image for ${project.title}`">
-                        <div class="text">
-                            <h4 class="fw-bold">
-                                {{project.title}}
-                            </h4>
-                            <p>
-                                {{project.paragraph}}
-                            </p>
-                        </div>
-                        <i class="fas fa-arrow-right"></i>
-                    </div>
+                    :key="index"
+                    :project="project"/>
                     <!-- /card -->
                 </div>
             </div>
@@ -46,13 +35,18 @@
 </template>
 
 <script>
+import ProjectCard from '../components/ProjectCard.vue';
+
 export default {
     name: 'Projects',
+    components: {
+        ProjectCard
+    },
     props: ['companyProjects']
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 @import '../assets/style/variables.scss';
 @import '../assets/style/mixins.scss';
 
