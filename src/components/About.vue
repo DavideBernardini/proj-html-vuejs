@@ -49,9 +49,7 @@
                 </div>
                 <!-- /left -->
                 <!-- right -->
-                <div class="col-6 h-100 right">
-                    <img class="h-100 w-100" src="../assets/images/about-4.jpg" alt="tizio incravattato">
-                </div>
+                <div class="col-6 h-100 right"></div>
                 <!-- /right -->
             </div>
         </div>
@@ -113,9 +111,11 @@ export default {
             }
         }
         .right {
-            img {
-                object-fit: cover;
-            }
+            background-image: url('../assets/images/about-4.jpg');
+            background-attachment: fixed;
+            background-position: 104%;
+            background-size: 52%;
+        
         }
     }
     .bullets {

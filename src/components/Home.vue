@@ -53,7 +53,7 @@ export default {
 .home {
     height: 53.125rem;
     background-image: url('../assets/images/bg-parallax.png');
-    background-color: lightgray;
+    background-color: rgb(238, 238, 238);
     background-position: center;
     position: relative;
     .content {
