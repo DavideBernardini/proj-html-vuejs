@@ -13,14 +13,14 @@
                                 A functional HTML Template for Corporate & Buisness.
                             </p>
                             <ul class="contacts">
-                                <li class="pb-4"
+                                <li class="pb-3"
                                 v-for="(contact, index) in contacts"
                                 :key="index">
                                     <i :class="contact.icon"></i>
                                     {{contact.info}}
                                 </li>
                             </ul>
-                            <a href="#support" class="btn_empty mt-2">
+                            <a href="#support" class="btn_empty mt-3">
                                 GET IN TOUCH
                             </a>
                         </div>
@@ -73,7 +73,7 @@ export default {
 
 footer {
     .top {
-        height: 620px;
+        height: 38.75rem;
         background-color: $bgDark;
         @include align-center;
         .row {
@@ -86,41 +86,41 @@ footer {
             .col.info {
                 .logo {
                     @include logo-style;
-                    font-size: 24px;
+                    font-size: 1.5rem;
                     color: $textColorSecondarySuperLight;
                 }
                 p {
-                    font-size: 17px;
+                    font-size: .9375rem;
                 }
                 .contacts {
                     @include list-style-none;
-                    font-size: 17px;
+                    font-size: .9375rem;
                 }
                 a {
                     color: $textColorSecondarySuperLight;
                 }
             }
             .col.links {
-                padding: 50px 44px;
+                padding: 3.125rem 2.75rem;
                 background-color: rgb(42, 42, 47, 0.2);
                 h4 {
                     color: $textColorSecondarySuperLight;
                     font-weight: bold;
-                    font-size: 25px;
-                    margin-bottom: 30px;
+                    font-size: 1.5625rem;
+                    margin-bottom: 1.875rem;
                 }
                 ul {
                     @include list-style-none;
                     li {
-                        margin-top: 10px;
-                        margin-bottom: 10px;
+                        margin-top: .625rem;
+                        margin-bottom: .625rem;
                         a {
-                            font-size: 17px;
+                            font-size: .875rem;
                             span {
                                 vertical-align: middle;
                             }
                             i {
-                                font-size: 25px;
+                                font-size: 1.5625rem;
                                 vertical-align: middle;
                             }
                         }
@@ -131,7 +131,7 @@ footer {
     }
     .bottom {
         background-color: $bgDarker;
-        height: 90px;
+        height: 5.625rem;
         color: $textColorSecondaryLighter;
         @include align-center;
         position: relative;
@@ -155,7 +155,7 @@ footer {
             font-size: 1.5rem;
             color: $bgDark;
             position: absolute;
-            right: 25px;
+            right: 1.5625rem;
             top: 50%;
             transform: translateY(-50%);
         }
