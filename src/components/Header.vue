@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header id="header">
         <div class="wrapper h-100">
             <!-- left -->
             <div class="header_left">
@@ -10,13 +10,11 @@
             <!-- right -->
             <div class="header_right">
                 <ul>
-                    <li class="pe-4">
-                        <i class="fas fa-phone pe-1"></i>
-                        +1 (305) 1234-5678
-                    </li>
-                    <li>
-                        <i class="fas fa-envelope"></i>
-                        hello@example.com
+                    <li class="pe-4"
+                    v-for="(contact, index) in contacts.splice(2)"
+                    :key="index">
+                        <i :class="contact.icon"></i>
+                        {{contact.info}}
                     </li>
                     <li class="px-4">
                         <a href="#">
@@ -42,7 +40,8 @@
 
 <script>
 export default {
-    name: 'Header'
+    name: 'Header',
+    props: ['contacts']
 }
 </script>
 

@@ -15,10 +15,10 @@
                 No matter what your company needs, we will be ready to assist you in the best possible wat.
             </p>
             <div class="buttons mt-5 pt-2">
-                <a href="#" class="btn_full me-4">
+                <a href="#support" class="btn_full me-4">
                         GET IN TOUCH
                 </a>
-                <a href="#" class="btn_empty">
+                <a href="#about" class="btn_empty">
                         READ MORE
                 </a>
             </div>

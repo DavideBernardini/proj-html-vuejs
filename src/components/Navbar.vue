@@ -17,7 +17,7 @@
                         <a :href="`#${section}`">{{section}}</a>
                     </li>
                 </ul>
-                <a href="#" class="btn_full ms-3">
+                <a href="#support" class="btn_full ms-3">
                     GET IN TOUCH
                 </a>
             </div>

@@ -1,22 +1,29 @@
 <template>
   <div id="app">
-    <Header/>
-    <Main :sections="sections" :serviceList="serviceList" :companyValues="companyValues" :companyProjects="companyProjects"
+    <Header :contacts="contacts"/>
+    <Main :sections="sections" 
+    :serviceList="serviceList" 
+    :companyValues="companyValues" 
+    :companyProjects="companyProjects"
     :results="results"
     :technologiesLogo="technologiesLogo"
     :contacts="contacts"/>
+    <Footer :contacts="contacts"
+    :footerLinks="footerLinks"/>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue';
 import Main from './components/Main.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
     Header,
-    Main
+    Main,
+    Footer
   },
   data() {
     return {
@@ -175,6 +182,44 @@ export default {
           type: 'position',
           info: 'Main Avenue, 987',
           icon: 'fas fa-map-marker-alt'
+        }
+      ],
+      footerLinks: [
+        {
+          title: 'About',
+          links: [
+            'The Company',
+            'Institutional',
+            'Social & Events',
+            'Innovation',
+            'Environment',
+            'Technology'
+          ],
+          action: '#about'
+        },
+        {
+          title: 'Services',
+          links: [
+            'Audit & Assurance',
+            'Financial Advisory',
+            'Analytics M&A',
+            'Middle Marketing',
+            'Legal Consulting',
+            'Regulatory Risk'
+          ],
+          action: '#services'
+        },
+        {
+          title: 'Support',
+          links: [
+            'Responsability',
+            'Term of Use',
+            'About Cookies',
+            'Privacy Policy',
+            'Accessibility',
+            'Information'
+          ],
+          action: '#support'
         }
       ]
     }
