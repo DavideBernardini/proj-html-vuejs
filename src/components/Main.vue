@@ -5,7 +5,7 @@
         <About :companyValues="companyValues"/>
         <Projects :companyProjects="companyProjects"/>
         <Results :results="results" :technologiesLogo="technologiesLogo"/>
-        <Support/>
+        <Support :contacts="contacts"/>
     </main>
 </template>
 
@@ -27,12 +27,15 @@ export default {
         Results,
         Support
     },
-    props: ['sections',
-    'serviceList',
-    'companyValues',
-    'companyProjects',
-    'results',
-    'technologiesLogo']
+    props: [
+        'sections',
+        'serviceList',
+        'companyValues',
+        'companyProjects',
+        'results',
+        'technologiesLogo',
+        'contacts'
+    ]
 }
 </script>
 

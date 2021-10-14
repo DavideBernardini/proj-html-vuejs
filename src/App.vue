@@ -3,7 +3,8 @@
     <Header/>
     <Main :sections="sections" :serviceList="serviceList" :companyValues="companyValues" :companyProjects="companyProjects"
     :results="results"
-    :technologiesLogo="technologiesLogo"/>
+    :technologiesLogo="technologiesLogo"
+    :contacts="contacts"/>
   </div>
 </template>
 
@@ -157,6 +158,23 @@ export default {
         {
           name: 'pingdom',
           logo: 'logo-3'
+        }
+      ],
+      contacts: [
+        {
+          type: 'phone',
+          info: '+1 (305) 1234-5678',
+          icon: 'fas fa-phone'
+        },
+        {
+          type: 'email',
+          info: 'hello@example.com',
+          icon: 'fas fa-envelope'
+        },
+        {
+          type: 'position',
+          info: 'Main Avenue, 987',
+          icon: 'fas fa-map-marker-alt'
         }
       ]
     }
