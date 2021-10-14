@@ -22,7 +22,7 @@
             <div class="container-fluid">
                 <div class="row row-cols-3">
                     <!-- card -->
-                    <div class="col"
+                    <div class="col pointer"
                     v-for="(project, index) in companyProjects"
                     :key="index">
                         <img class="w-100" 
@@ -35,6 +35,7 @@
                                 {{project.paragraph}}
                             </p>
                         </div>
+                        <i class="fas fa-arrow-right"></i>
                     </div>
                     <!-- /card -->
                 </div>
@@ -113,8 +114,16 @@ export default {
                 color: $textColorSecondaryLighter;
             }
         }
+        .fa-arrow-right {
+            font-size: 30px;
+            color: $textColorSecondarySuperLight;
+            position: absolute;
+            top: 35px;
+            right: 40px;
+            display: none;
+        }
     }
-    .col:hover p {
+    .col:hover p, .col:hover .fa-arrow-right {
         display: block;
     }
     .col:nth-child(2), .col:nth-child(5) {
